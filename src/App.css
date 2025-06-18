@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+  position: relative;
+}
+
+.navbar a,
+.navbar span {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  padding: 0.5em 0;
+  z-index: 1;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5em 1em;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
